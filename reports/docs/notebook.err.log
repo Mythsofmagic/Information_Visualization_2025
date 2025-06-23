@@ -25,26 +25,9 @@ import plotly.graph_objs as go
 import seaborn as sns
 import numpy as np
 import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
 from plotly.offline import init_notebook_mode
 init_notebook_mode(connected=True)
-
-df1 = pd.read_csv('World-happiness-report-2024.csv')
-fig = px.choropleth(
-    df1,
-    locations='Country name',
-    locationmode='country names',
-    color='Ladder score',
-    color_continuous_scale='Viridis',
-    title='World Happiness Score by Country'
-)
-
-# Adjust size
-fig.update_layout(width=1000, height=600)
-
-# Adjust projection & zoom
-fig.update_geos(projection_type='natural earth')
-
-fig.show()
 ------------------
 
 
