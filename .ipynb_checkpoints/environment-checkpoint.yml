@@ -1,0 +1,15 @@
+name: jupyterbook-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - jupyter-book
+  - pandas
+  - plotly
+  - nodejs
+  - seaborn
+  - numpy
+  - matplotlib
+  - scikit-learn
+  - ipykernel
+  - pillow
