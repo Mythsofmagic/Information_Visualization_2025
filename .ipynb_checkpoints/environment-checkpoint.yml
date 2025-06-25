@@ -6,5 +6,10 @@ dependencies:
   - jupyter-book
   - pandas
   - plotly
-  - nodejs  # for plotly + JS compatibility
+  - nodejs
+  - seaborn
+  - numpy
+  - matplotlib
+  - scikit-learn
   - ipykernel
+  - pillow
